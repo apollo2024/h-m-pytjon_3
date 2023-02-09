@@ -10,7 +10,7 @@ import random
 
 
 size = int(input())
-list = [random.randint(0, 100) for i in range(size)]
+list = [random.randint(0, 50) for i in range(size)]
 print(list)
 print(f"число которое надо найти")
 find_out = int(input())
@@ -18,4 +18,4 @@ counter  = 0
 for i in list:
     if find_out == i:
         counter += 1
-print(counter)
+print(f'найдено совпадений = {counter}')
